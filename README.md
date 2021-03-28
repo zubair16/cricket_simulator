@@ -1,1 +1,1 @@
-"# Cricket Simulator" 
+# Cricket Simulator
