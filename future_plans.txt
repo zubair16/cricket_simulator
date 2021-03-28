@@ -1,0 +1,5 @@
+Future Plans:
+- Different formats - Test, ODI, T20I
+- Match Series (5 Tests, etc) -> Player form can get involved
+- Batsmen stats: base stats (aggressive, defensive), shot stats(block, drive, cut, pull), tendancies (bad against short ball, good at unorthodox shots)
+
