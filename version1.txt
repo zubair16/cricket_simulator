@@ -1,7 +1,7 @@
 Factors that affect the ball simulation:
 - Bowler: rating, attacking mode, defensive mode
 - Batsman: rating, attacking mode, defensive mode 
-- Pitch: batsman/bowler favourability, seaming/swinging/spinning
+- Pitch/weather: batsman/bowler favourability, seaming/swinging/spinning
 - Momentum (Team/Player momentum)
 
 
@@ -20,19 +20,20 @@ Delivery outcomes:
 
 Player rating: x/100
 Pitch rating:
-- Dead: favouring batsmen
-- Dusty: favouring spinners
-- Green: favouring seamers
+- Dead: favouring batsmen (+10)
+- Dusty: favouring spinners (+10)
+- Green: favouring seamers (+10)
  
 Weather rating:
 - Sunny: helps batsmen
 - Overcast: helps seam bowlers
 
 outcome = Batsmen value - bowler value (Anything under 0 is a wicket)
-- Zero: 0-25
-- One: 26-50
-- Two: 51-65
-- Three: 66-75
-- Four: 76-90
-- Six: 91-100
+- Zero: 0-25 (Bowler + 1)
+- One: 26-50 (Batsman + 1)
+- Two: 51-65 (Bowler - 1, Batsman + 2)
+- Three: 66-75 (Bowler - 1, Batsman + 3)
+- Four: 76-90 (Bowler - 2, Batsman + 3)
+- Six: 91-100 (Bowler - 5, Batsman + 5)
+- Wicket: < 0 (Bowler + 5)
 
